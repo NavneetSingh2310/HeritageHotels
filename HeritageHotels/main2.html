@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <!--Title-->
+    <title>The Heritage Living</title>
+
+     <!-- Stylesheet -->
+     <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+	
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="nav-wapper">
+            
+            <div class="left-side">
+                <div class="brand">
+                    <div>The Heritage Living</div>
+                </div>
+            </div>
+
+            <div class="right-side">
+                <div class="nav-link-wapper active-nav-link">
+                    <a href="main2.html">home</a>
+                </div>
+                <div class="nav-link-wapper">
+                    <a onclick="document.getElementById('id01').style.display='block'">login/Signup</a>
+                </div>
+                <div class="nav-link-wapper">
+                    <a href="about.html">about</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="content-wrapper">
+            
+            <div class="items-wrapper">
+
+                <div class="item-wrapper">
+                    <div class="img-background" style="background-image:url(2.jpg);"></div>
+                    <div class="text-wapper">
+                        <div class="text">
+                           <h1> Umaid Bhawan Palace</h1>
+                           <p></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item-wrapper">
+                    <div class="img-background" style="background-image:url(4.jpg);"></div>
+                    <div class="text-wapper">
+                        <div class="text">
+                           <h1>Rambagh Palace</h1>
+                           <p>.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+            
+    
+        <div class="icon-wapper">
+
+            <div class="icon-items">
+                <div class="icon-item">
+                    <div class="icon-pic" style="background-image:url(1.jpg)"></div>
+                    <div class="icon-title"><a href="main.html">Peace</a></div>
+                    <div class="icon-text">Lorem ipsum dolor sit amet, consec tetuer adipiscng. Prent vestibulum moles tie lacuiirhs. Aenean non ummy.</div>
+                </div>
+
+                <div class="icon-item">
+                    <div class="icon-pic" style="background-image:url(6.jpg)"></div>
+                    <div class="icon-title"><a href="main.html">Romance</a></div>
+                    <div class="icon-text">Ipsum dolor sit amet, consec tetuer adipiscng. Prent vestibulum moles tie lacuiirhs. Aenean non ummy.</div>
+
+                </div>
+
+                <div class="icon-item">
+                    <div class="icon-pic" style="background-image:url(8.jpg)"></div>
+                    <div class="icon-title"><a href="main.html">Architecture</a></div>
+                    <div class="icon-text">Dolor sit amet, consec tetuer adipiscng. Prent vestibulum moles tie lacuiirhs. Aenean non ummy.
+
+                        </div>
+
+                </div>
+
+                <div class="icon-item">
+                    <div class="icon-pic" style="background-image:url(9.jpg)"></div>
+                    <div class="icon-title"><a href="main.html">History</a></div>
+                    <div class="icon-text">Lorem ipsum dolor sit amet, consec tetuer adipiscng. Prent vestibulum moles tie lacuiirhs. Aenean non ummy.</div>
+
+                </div>
+
+            </div>
+        </div>
+
+		<h1 align="center">Palaces</h1>
+        <div class="content-wrapper">
+            
+            <div class="items-wrapper">
+
+                <div class="item-wrapper">
+                    <div class="img-background" style="background-image:url(10.jpg);"></div>
+                    <div class="text-wapper">
+                        <div class="text1" onclick="location.href='umaid_palace.html'">
+                           <h1> Umaid Bhawan Palace</h1>
+                           
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item-wrapper">
+                    <div class="img-background"  style="background-image:url(15.jpg);"></div>
+                    <div class="text-wapper" >
+                        <div class="text1" onclick="location.href='rambagh.html'">
+                           <h1>Rambagh Palace</h1>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+ <div class="content-wrapper">
+            
+            <div class="items-wrapper">
+
+                <div class="item-wrapper">
+                    <div class="img-background" style="background-image:url(17.jpg);"></div>
+                    <div class="text-wapper">
+                        <div class="text1" onclick="location.href='samode.html'">
+                           <h1> Samode Palace</h1>
+                           </div>
+                    </div>
+                </div>
+
+                <div class="item-wrapper">
+                    <div class="img-background" style="background-image:url(13.jpg);"></div>
+                    <div class="text-wapper">
+                        <div class="text1" onclick="location.href='taj_lake.html'">
+                           <h1>Taj Lake Palace</h1>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+		
+    
+	
+	
+<div id="id01" class="modal">
+  
+  
+  <div id="login_div" class="main-div animate" >
+  <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="c21.png" alt="Avatar" class="avatar">
+    </div>
+    <h3>Login/Signup</h3>
+    <input type="email" placeholder="Email..." id="email_field" />
+    <input type="password" placeholder="Password..." id="password_field" />
+	
+
+    <button onclick="login()" id="loginbutton">Login to Account</button>
+    <button onclick="create_account()" id="loginbutton">Create Account</button>
+  </div>
+
+  <div id="user_div" class="loggedin-div">
+    <h3>Welcome User</h3>
+    <p id="user_para">Welcome to Firebase web login Example. You're currently logged in.</p>
+    <button onclick="logout()" id="loginbutton">Logout</button>
+  <button onclick="send_verification()" id="Verify_btn">Send Verification mail</button>
+  </div>
+
+</div>
+
+
+
+<script src="https://www.gstatic.com/firebasejs/5.9.4/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyA5yzOxynCBUCre8bg5cTcI2Vy6hwOohFI",
+    authDomain: "online-booking177.firebaseapp.com",
+    databaseURL: "https://online-booking177.firebaseio.com",
+    projectId: "online-booking177",
+    storageBucket: "online-booking177.appspot.com",
+    messagingSenderId: "1034038495876"
+  };
+  firebase.initializeApp(config);
+</script>
+<script src="indexExample.js"></script>
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+</script>
+	
+
+
+</body>
+
+</html> 

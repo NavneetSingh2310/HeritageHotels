@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+<head>
+  <title>Firebase Login</title>
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="stylecreate.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <!-------------------------------------------->
+  <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+
+    <!--<link rel="stylesheet" href="styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+ --> <style>
+  .bgimg{
+  background-image:url('4.jpg');
+  height:100%;
+  width:100%;
+  
+  }
+  </style>
+  
+  </head>
+<body>
+<nav class="navbar navbar-inverse" >
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Heritage Hotel</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li ><a href="home.html">Home</a></li>
+      
+    </ul>
+    </div>
+</nav><br><br>
+
+
+
+<img src="logo.png" style="margin-left:38%;" >
+<br>
+<div style="margin-left:33%; font-size:40px; font-family:CommercialScript BT"><p>We convert dreams into reality</p></div>
+
+
+
+<div id="login_div" class="main-div animate" style="margin-top:10px; width:50% " >
+  
+    <h3>Signup</h3>
+    <input type="email" placeholder="Email..." id="email_field" />
+    <input type="password" placeholder="Password..." id="password_field" />
+    
+
+    <!--<button onclick="login()" id="loginbutton">Login to Account</button>-->
+    <button onclick="create_account()" id="loginbutton" style="width:50%; margin-left:25%">Create Account</button>
+  </div>
+
+  <div id="user_div" class="loggedin-div" style="margin-top:10px; width:50% ">
+  
+    <h3 style="text-align:center">Welcome User</h3>
+    <p id="user_para" style="text-align:center">Welcome to Firebase web login Example. You're currently logged in.</p>
+    <button onclick="logout()" id="loginbutton">Logout</button>
+  <button onclick="send_verification()" id="Verify_btn">Send Verification mail</button>
+  </div>
+
+</div>
+
+
+
+<script src="https://www.gstatic.com/firebasejs/5.9.4/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyA5yzOxynCBUCre8bg5cTcI2Vy6hwOohFI",
+    authDomain: "online-booking177.firebaseapp.com",
+    databaseURL: "https://online-booking177.firebaseio.com",
+    projectId: "online-booking177",
+    storageBucket: "online-booking177.appspot.com",
+    messagingSenderId: "1034038495876"
+  };
+  firebase.initializeApp(config);
+</script>
+<script src="indexExample.js"></script>
+</script><br><br>
+<div id="footer">
+        
+                <div class="footer-items">
+                    <div class="footer-item">
+                        <h3>Location</h3>
+                        <p>Bhawani Singh Rd, <br>Rambagh, Jaipur, Rajasthan 302005<br>
+                            
+                            Freephone: +91 981 555 5817</p>
+                    </div>
+                    <div class="footer-item">
+                        <h3>news letter</h3>
+                        <lable style="/* font-size:30px; // padding-right:20px */">
+                          <input type="text" name="email" placeholder="Enter email" style="
+                          width: 60%;
+                          /* padding:14px; */
+                          /* margin: 5px 0 22px 0; */
+                          /* display: inline-block; */
+                          /* border: none; */
+                          background: #f1f1f1;
+                          ">  <button id="topbtn" class="btn navbar-btn" style="border:1px solid black;">GO</button>
+                      </lable>
+                    </div>
+                    <div class="footer-item">
+                        <h3>COPYRIGHT</h3>
+                        <div class="copy">
+                                <span><b>Heritage</b>Hotels&nbsp;©</span>
+                                <span id="copyright-year">2019</span>
+                                <span>•</span>
+                                <span><a href="main.html" style="text-decoration:none;color:black;">Privacy Policy</a></span> 
+                            </div>
+                    </div>
+                </div>
+</body>
+</html>

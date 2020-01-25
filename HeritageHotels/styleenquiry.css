@@ -1,0 +1,35 @@
+#topbtn:hover {
+ 
+  background: #fff;
+  color: rgb(197,136,5);
+  border: 1px solid rgb(197,136,5);
+  cursor: pointer;
+}
+
+#topbtn{
+	background-color: rgb(197,136,5);
+	color:white;
+	
+}
+
+#footer{
+    background-color: rgb(197,136,5);
+    border-top: 1px solid #e0e0e0b2;
+    position: relative;
+    text-align: center;
+}
+
+h3 {
+    text-transform: uppercase;
+    font-size: 42px;
+    line-height: 48px;
+    color: white;
+    font-weight: 400;
+    margin-bottom: 45px;
+}
+.footer-items{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px;
+}
+

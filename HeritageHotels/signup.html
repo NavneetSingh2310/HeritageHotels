@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <!--Title-->
+    <title>खम्मा घणी</title>
+
+     <!-- Stylesheet -->
+     <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+	<style>
+<!--body, html {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-img {
+  /* The image used */
+  background-image: url("4.jpg");
+
+  min-height: 750px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Add styles to the form container */
+.container {
+  position: absolute;
+  right: 0;
+  margin: 20px;
+  max-width: 500px;
+  max-height:;
+  padding: 16px;
+  background-color: white;
+  opacity: 0.9;
+  filter: alpha(opacity=60);
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: rgb(235,167,21);
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+</style>
+</head>-->
+<body>
+
+        <div class="nav-wapper">
+            
+            <div class="left-side">
+                <div class="brand">
+                    <div>खम्मा घणी</div>
+                </div>
+            </div>
+
+            <div class="right-side">
+                <div class="nav-link-wapper active-nav-link">
+                    <a href="main2.html">home</a>
+                </div>
+                <div class="nav-link-wapper">
+                    <a href="login.html">login/sign up</a>
+                </div>
+                <div class="nav-link-wapper">
+                    <a href="about.html">about</a>
+                </div>
+            </div>
+
+        </div>
+		
+ <div class="bg-img">
+ 
+    <h1>SignUp</h1>
+
+    <div id="login_div" class="main-div">
+    <h3>Firebase Web login Example</h3>
+    <input type="email" placeholder="Email..." id="email_field" />
+    <input type="password" placeholder="Password..." id="password_field" />
+	
+
+    <button onclick="login()">Login to Account</button>
+    <button onclick="create_account()">Create Account</button>
+  </div>
+
+  <div id="user_div" class="loggedin-div">
+    <h3>Welcome User</h3>
+    <p id="user_para">Welcome to Firebase web login Example. You're currently logged in.</p>
+    <button onclick="logout()">Logout</button>
+  <button onclick="send_verification()" id="Verify_btn">Send Verification mail</button>
+  </div>
+  
+</div>
+	<script>
+	function signup()
+	{
+	alert("Details has been saved");
+	location.href='main2.html';
+	}
+	</script>
+		</body>
+		</html>

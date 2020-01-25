@@ -1,0 +1,406 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Bree Serif', serif;
+    letter-spacing: 2px;
+}
+
+
+/*top bar */
+.nav-wapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 32px;
+}
+
+.left-side{
+    font-size: 25px
+}
+
+.right-side{
+    display: flex;
+}
+
+.nav-wapper > .right-side >div{
+    margin-right: 20px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+.nav-link-wapper{
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.1s;  
+}
+
+.nav-link-wapper a{
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.nav-link-wapper :hover{
+        border-bottom: 1px solid black;
+}
+
+.nav-link-wapper a:hover{
+    color: black;
+}
+
+.active-nav-link {
+    border-bottom: 0px solid black;
+}
+
+.active-nav-link a{
+    color: black !important;
+}
+
+
+/*about page*/
+
+/*main page*/
+.items-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 0%;
+}
+
+.item-wrapper{
+    position: relative;
+
+}
+
+.items-wrapper1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-bottom: 0%;
+
+}
+
+.item-wrapper1{
+    position: relative;
+
+}
+
+.img-background{
+    height:350px;
+    width: 100%;
+	border-radius:0px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+	border:3px solid white;
+}
+
+.img-background1{
+    height:350px;
+    width: 100%;
+	border-radius:0px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+	border:3px solid rgb(197,136,5);
+}
+
+.text-wapper{
+    position: absolute;
+    top:0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.text:hover {
+    color: white;
+    text-size-adjust: 10px;
+    font-weight: 600;
+}
+.text1:hover {
+    color: black;
+    text-size-adjust: 10px;
+    font-weight: 600;
+}
+.text{
+    transition: 1s;
+    font-weight: 600;
+    text-size-adjust: 10px;
+    color: transparent;
+}
+.text1{
+    transition: 1s;
+    font-weight: 600;
+    text-size-adjust: 10px;
+    color: transparent;
+}
+
+/*para in main page*/
+.para-wapper{
+    background-color: rgb(16, 38, 61);
+    color: white;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 10px;
+    padding-top: 10px; 
+}
+
+
+/*
+icon-wapper in main page
+*/
+.icon-pic{
+        height:100px;
+        width: 30%;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding-left: 65%;
+		
+
+    
+}
+.icon-pic:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(3); 
+}
+
+.icon-item{
+	
+    position: relative;
+}
+
+.icon-items{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.icon-title {
+    color:rgb(197,136,5); ;
+    text-decoration: none;
+    font-size: 30px;
+
+}
+
+
+.icon-title{
+    text-align: center;
+    text-size-adjust: 10px;
+}
+.icon-wapper{
+    padding: 100px 100px 100px 100px;
+}
+.icon-text{
+    color: dimgray;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+    font-size: 15px;
+
+}
+
+/*
+new release in main page
+*/
+.new-release-wapper{
+    background-color:  rgb(209, 19, 130);
+}
+
+.title-new-release{
+    padding-left: 39%;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    padding-right: 39%;
+    font-size: 40px;
+    color: white;
+    text-decoration-style: solid;
+}
+
+.new-release-item{
+    position: relative;
+}
+.new-release-items{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-bottom: 30px;
+}
+
+
+/*-----------------------------------------------book--------------------------------*/
+.book-pic{
+    height:350px;
+    width: 100%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.book-title a{
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+
+}
+.book-title a:hover{
+    color: black;
+
+}
+
+
+.book-title{
+    text-align: center;
+    text-size-adjust: 10px;
+    padding: 20px;
+}
+
+.book-dis{
+    color:  rgb(38, 38, 39);
+    text-align: center;
+    text-size-adjust: 10px;
+    padding-bottom: 10px;
+}
+
+
+
+/*---------------------------------------more-link-------------------------------------*/
+
+.more-link a{
+    color: white;
+    text-decoration: none;
+
+}
+.more-link a:hover{
+    color: white;
+    border-bottom: 1px white solid;
+
+}
+.more-link{
+    text-align: center;
+    text-size-adjust: 10px;
+    padding: 20px;
+}
+
+/*-------------------------------------main-about-news---------------------------------------------------*/
+
+.main-about-news-items{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.main-news{
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+}
+
+
+.date{
+
+}
+
+/*_______________________________________________________________________________________________________________________*/
+
+form {border: 3px solid #f1f1f1;}
+
+input[type=text], input[type=password], input[type=email] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+buttonn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+buttonn:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+ 
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+
+.brand{
+	font-family:
+}
+
+.mySlides {display:none;}
+
+
+
+/*_______________________________________________________________________________________________________________________*/
+
+/*----------------footer----------*/
+
+#footer{
+    background-color: rgb(197,136,5);
+    border-top: 1px solid #e0e0e0b2;
+    position: relative;
+    text-align: center;
+}
+
+h3 {
+    text-transform: uppercase;
+    font-size: 42px;
+    line-height: 48px;
+    color: white;
+    font-weight: 400;
+    margin-bottom: 45px;
+}
+.footer-items{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px;
+}
+
+ .loggedin-div button:hover {
+  background: #fff;
+  color: rgb(197,136,5);
+  border: 1px solid rgb(197,136,5);
+  cursor: pointer;
+}
+
